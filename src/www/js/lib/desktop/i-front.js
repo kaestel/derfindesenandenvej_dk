@@ -25,7 +25,12 @@ Util.Objects["front"] = new function() {
 			// map reference
 			page.cN.scene = this;
 
-
+			u.e.click(this);
+			this.clicked = function() {
+				u.bug("scene clicked")
+				this.dot.increase();
+				this.clicked = null;
+			}
 
 			this.dot = u.qs("p", this);
 

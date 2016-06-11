@@ -30,7 +30,7 @@ dd {display: inline-block; vertical-align: top; font-size: 13px; line-height: 1.
 
 /*s-content.css*/
 #content {height: 100%; }
-#content .scene {height: 100%;}
+#content .scene {height: 100%; overflow: hidden;}
 #content .scene h1 {display: none;}
 #content .scene p {position: absolute; top: 50%; left: 50%; width: 4px; height: 4px; margin-left: 2px; margin-top: -2px; border-radius: 2px; padding: 0; background: #ffffff; overflow: hidden;}
 #content .scene p a {display: block;text-indent: -9999px; width: 100%; height: 100%; opacity: 0;

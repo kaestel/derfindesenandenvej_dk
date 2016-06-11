@@ -4560,6 +4560,8 @@ Util.Objects["page"] = new function() {
 		page.ready = function() {
 			if(!this.is_ready) {
 				this.is_ready = true;
+				u.e.drag(this, this);
+				u.e.addEvent(window, "orientationchange", page.resized);
 				u.e.addEvent(window, "resize", page.resized);
 				u.e.addEvent(window, "scroll", page.scrolled);
 				this.resized();
@@ -4586,6 +4588,12 @@ Util.Objects["front"] = new function() {
 		}
 		scene.ready = function() {
 			page.cN.scene = this;
+			u.e.click(this);
+			this.clicked = function() {
+				u.bug("scene clicked")
+				this.dot.increase();
+				this.clicked = null;
+			}
 			this.dot = u.qs("p", this);
 			this.dot.scene = this;
 			this.dot.move_count = 0;

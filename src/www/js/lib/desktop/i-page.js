@@ -38,6 +38,11 @@ Util.Objects["page"] = new function() {
 				// page is ready
 				this.is_ready = true;
 
+				u.e.drag(this, this);
+
+				// set resize handler
+				u.e.addEvent(window, "orientationchange", page.resized);
+
 				// set resize handler
 				u.e.addEvent(window, "resize", page.resized);
 				// set scroll handler

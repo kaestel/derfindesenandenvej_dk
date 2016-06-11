@@ -4582,6 +4582,15 @@ Util.Objects["front"] = new function() {
 				u.ass(this.dot._a, {
 					"background-size": (page.browser_w * 0.25) + "px auto"
 				});
+				if(this.dot.revealed) {
+					u.ass(this.dot, {
+						"margin-left": (-page.browser_w * 0.25)/2+"px",
+						"margin-top": (-page.browser_w * 0.25)/2+"px",
+						"border-radius": (page.browser_w * 0.25)/2+"px",
+						"width": (page.browser_w * 0.25)+"px",
+						"height": (page.browser_w * 0.25)+"px",
+					});
+				}
 			}
 		}
 		scene.scrolled = function() {
@@ -4590,7 +4599,6 @@ Util.Objects["front"] = new function() {
 			page.cN.scene = this;
 			u.e.click(this);
 			this.clicked = function() {
-				u.bug("scene clicked")
 				this.dot.increase();
 				this.clicked = null;
 			}
@@ -4621,12 +4629,15 @@ Util.Objects["front"] = new function() {
 				if(this.radius_max > this.diagonal_radius) {
 					u.t.resetTimer(this.t_fluctuate);
 					u.e.removeEvent(this, "mousemove", this.moved);
+					u.ass(this.scene, {
+						"background": "#ffffff"
+					});
 					u.ass(this, {
-						"margin-left": (-this.radius_max)+"px",
-						"margin-top": (-this.radius_max)+"px",
-						"border-radius": 0,
-						"width": (this.radius_max*2)+"px",
-						"height": (this.radius_max*2)+"px",
+						"margin-left": (-page.browser_w * 0.25)/2+"px",
+						"margin-top": (-page.browser_w * 0.25)/2+"px",
+						"border-radius": (page.browser_w * 0.25)/2+"px",
+						"width": (page.browser_w * 0.25)+"px",
+						"height": (page.browser_w * 0.25)+"px",
 					});
 					u.ass(this._a, {
 						"opacity": 1
@@ -4634,6 +4645,7 @@ Util.Objects["front"] = new function() {
 					this.clicked = function(event) {
 						location.href = this.url;
 					}
+					this.revealed = true;
 					return;
 				}
 				this.t_fluctuate = u.t.setTimer(this.scene, "fluctuateHole", 100);

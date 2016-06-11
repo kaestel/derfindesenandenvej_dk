@@ -1,0 +1,39 @@
+
+/*seg_desktop_include.css*/
+
+/*s-page.css*/
+* {font-family: "OpenSans", Verdana, Arial, sans-serif; color: #000000;
+	-webkit-text-size-adjust: none;
+	-webkit-font-smoothing: antialiased;
+}
+html {min-height: 100%; height: 100%;}
+body {min-height: 100%; height: 100%; background: #000000; margin: 0; overflow: hidden;}
+h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dd, dt {padding: 0; margin: 0;}
+h1, h2, h3, h4, h5, h6, p, li, dd, dt, span, a {line-height: 1em; font-weight: normal;}
+ul {list-style: none;}
+a {text-decoration: none; cursor: pointer;}
+img {border: 0; display: block;}
+form, fieldset, label, input, select, textarea {padding: 0; margin: 0; font-weight: normal;}
+fieldset {border: none;}
+input, select, textarea {font-size: 14px; color: #333333;}
+input, textarea {outline: none;}
+a, span {font-size: inherit; font-family: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; color: inherit; text-transform: inherit;}
+em, strong {font-size: inherit; font-family: inherit; line-height: inherit; color: inherit; text-transform: inherit;}
+ul,
+ol {font-size: 0;}
+li {font-size: 13px; line-height: 1.25em;}
+dl {font-size: 0;} 
+dt, 
+dd {display: inline-block; vertical-align: top; font-size: 13px; line-height: 1.25em;}
+#page {min-height: 100%; height: 100%;}
+
+
+/*s-content.css*/
+#content {height: 100%; }
+#content .scene {height: 100%;}
+#content .scene h1 {display: none;}
+#content .scene p {position: absolute; top: 50%; left: 50%; width: 4px; height: 4px; margin-left: 2px; margin-top: -2px; border-radius: 2px; padding: 0; background: #ffffff; overflow: hidden;}
+#content .scene p a {display: block;text-indent: -9999px; width: 100%; height: 100%; opacity: 0;
+	background: transparent url(/img/logo.png) no-repeat center center;
+}
+

@@ -1,0 +1,7 @@
+#content {height: 100%; }
+#content .scene {height: 100%;}
+
+#content .scene h1 {display: none;}
+#content .scene p {position: absolute; top: 50%; left: 50%; width: 10px; height: 10px; margin-left: 5px; margin-top: -5px; border-radius: 5px; padding: 0; background: #ffffff; overflow: hidden;}
+
+#content .scene p a {display: block; text-indent: -9999px; width: 100%; height: 100%;}

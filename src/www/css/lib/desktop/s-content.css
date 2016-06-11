@@ -1,5 +1,5 @@
 #content {height: 100%; }
-#content .scene {height: 100%; overflow: hidden;}
+#content .scene {height: 100%; overflow: hidden; position: relative;}
 
 #content .scene h1 {display: none;}
 #content .scene p {position: absolute; top: 50%; left: 50%; width: 4px; height: 4px; margin-left: 2px; margin-top: -2px; border-radius: 2px; padding: 0; background: #ffffff; overflow: hidden;}

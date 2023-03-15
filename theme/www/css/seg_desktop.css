@@ -1,3 +1,6 @@
+/*
+asset-builder @ 2023-03-15 19:42:36
+*/
 
 /*seg_desktop_include.css*/
 
@@ -34,6 +37,6 @@ dd {display: inline-block; vertical-align: top; font-size: 13px; line-height: 1.
 #content .scene h1 {display: none;}
 #content .scene p {position: absolute; top: 50%; left: 50%; width: 4px; height: 4px; margin-left: 2px; margin-top: -2px; border-radius: 2px; padding: 0; background: #ffffff; overflow: hidden;}
 #content .scene p a {display: block;text-indent: -9999px; width: 100%; height: 100%; opacity: 0;
-	background: transparent url(/img/logo.png) no-repeat center center;
+	background: transparent url(../img/logo.png) no-repeat center center;
 }
 

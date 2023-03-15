@@ -23,7 +23,7 @@ define("DEFAULT_LANGUAGE_ISO", "EN");
 define("DEFAULT_COUNTRY_ISO", "DK"); 
 define("DEFAULT_CURRENCY_ISO", "DKK");
 
-define("SITE_LOGIN_URL", "/login");
+define("SITE_LOGIN_URL", "/janitor/admin/login");
 
 define("SITE_SIGNUP", false);
 define("SITE_SIGNUP_URL", "/signup");
